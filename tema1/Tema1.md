@@ -7,24 +7,24 @@ Antes de nada debemos saber qué es y [cómo calcular una amortización](http://
 
 **Amortización a 4 años:**
 Cuota de amortización: 158,89€ (redondeado hacia arriba)
-Año|Amortización acumulada|Valor
----|----------------------|-----
-1|158,89€|476,65€
-2|317,78€|317,76€
-3|476,67€|158,87€
-4|635,54€|0€
+| Año  | Amortización acumulada  | Valor  |
+|:-:|:-:|:-:|:-:|
+|1| | 158,89€ | 476,65€|
+|2| |317,78€  |317,76€|
+|3| |476,67€  |158,87€|
+|4| |635,54€  |0€|
 
 **Amortización a 7 años:**
 Cuota de amortización: 90,79€ (redondeado hacia abajo)
-Año|Amortización acumulada|Valor
----|----------------------|-----
-1|90,79€|544,75€
-2|181,58€|453,96€
-3|272.37€|363.17€
-4|363,16€|272,38€
-5|453,95€|181,59€
-6|544,74€|90,8€
-7|635,54€|0€
+| Año  | Amortización acumulada  | Valor  |
+|:-:|:-:|:-:|:-:|
+|1||90,79€|544,75€|
+|2||181,58€|453,96€|
+|3||272.37€|363.17€|
+|4||363,16€|272,38€|
+|5||453,95€|181,59€|
+|6||544,74€|90,8€|
+|7||635,54€|0€|
 *(el valor del penúltimo año difiere un poco de la cuota de amortización por el redondeo)*
 
 ## Ejercicio 2.
@@ -33,6 +33,7 @@ Año|Amortización acumulada|Valor
 ## Ejercicio 3.
 ### 1. ¿Qué tipo de virtualización usarías en cada caso?
 [Enlace al issue](https://github.com/JJ/IV16-17/issues/1)
+
 ![Imagen Ej3.1](http://i1294.photobucket.com/albums/b605/josejapch/IV/Tema%201/ej3_zps7s1hev7w.jpg)
 
 ### 2. Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
@@ -49,6 +50,7 @@ egrep '^flags.*(vmx|svm)' /proc/cpuinfo
 ```
 Resultado:
 ![Imagen Ej4](http://i1294.photobucket.com/albums/b605/josejapch/IV/Tema%201/ej4_zps7ugqs0hw.jpg)
+
 *(texto repetido por cada uno de los núcleos del procesador)*
 
 ##Ejercicio 5.
@@ -56,4 +58,5 @@ Resultado:
 ![Imagen Ej5.1](http://i1294.photobucket.com/albums/b605/josejapch/IV/Tema%201/Ej5-1_zpsiip9dt0z.jpg)
 ### 2. Instalar un hipervisor para gestionar máquinas virtuales, que más adelante se podrá usar en pruebas y ejercicios.
 Actualmente dispongo de VMware Player y VirtualBox.
+
 ![Imagen Ej5.2](http://i1294.photobucket.com/albums/b605/josejapch/IV/Tema%201/ej5-2_zpsnfbi1doa.jpg)
