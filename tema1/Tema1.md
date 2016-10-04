@@ -7,24 +7,28 @@ Antes de nada debemos saber qué es y [cómo calcular una amortización](http://
 
 **Amortización a 4 años:**
 Cuota de amortización: 158,89€ (redondeado hacia arriba)
+
 | Año  | Amortización acumulada  | Valor  |
-|:-:|:-:|:-:|:-:|
-|1| | 158,89€ | 476,65€|
-|2| |317,78€  |317,76€|
-|3| |476,67€  |158,87€|
-|4| |635,54€  |0€|
+|:----:|:-----------------------:|:------:|
+|1     |158,89€                  |476,65€ |
+|2     |317,78€                  |317,76€ |
+|3     |476,67€                  |158,87€ |
+|4     |635,54€                  |0€      |
+
 
 **Amortización a 7 años:**
 Cuota de amortización: 90,79€ (redondeado hacia abajo)
+
 | Año  | Amortización acumulada  | Valor  |
-|:-:|:-:|:-:|:-:|
-|1||90,79€|544,75€|
-|2||181,58€|453,96€|
-|3||272.37€|363.17€|
-|4||363,16€|272,38€|
-|5||453,95€|181,59€|
-|6||544,74€|90,8€|
-|7||635,54€|0€|
+|:----:|:-----------------------:|:------:|
+|1     |90,79€                   |544,75€ |
+|2     |181,58€                  |453,96€ |
+|3     |272.37€                  |363.17€ |
+|4     |363,16€                  |272,38€ |
+|5     |453,95€                  |181,59€ |
+|6     |544,74€                  |90,8€   |
+|7     |635,54€                  |0€      |
+
 *(el valor del penúltimo año difiere un poco de la cuota de amortización por el redondeo)*
 
 ## Ejercicio 2.
