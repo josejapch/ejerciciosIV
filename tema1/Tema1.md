@@ -73,6 +73,15 @@ Como podemos ver, resulta mucho más económico contratar los servidores por hor
 ![Imagen Ej3.1](http://i1294.photobucket.com/albums/b605/josejapch/IV/Tema%201/ej3_zps7s1hev7w.jpg)
 
 ### 2. Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
+Se trata de un programa que abre un archivo pasado como parámetro y escribe por pantalla su contenido. En este caso se abre un archivo txt que contiene escrito "hola mundo".
+
+Ejecución del programa:
+
+![Imagen Ej3.2](http://i1294.photobucket.com/albums/b605/josejapch/IV/Tema%201/ej32_zpsyyirgbry.jpg)
+
+Ejecución del paquete CDE del programa en otra distribución:
+
+![Imagen Ej3.2](http://i1294.photobucket.com/albums/b605/josejapch/IV/Tema%201/ej4%20b_zpsyf1r0qgl.jpg)
 
 ## Ejercicio 4.
 ### Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
@@ -85,7 +94,7 @@ Orden:
 egrep '^flags.*(vmx|svm)' /proc/cpuinfo
 ```
 Resultado:
-![Imagen Ej4](http://i1294.photobucket.com/albums/b605/josejapch/IV/Tema%201/ej4_zps7ugqs0hw.jpg)
+![Imagen Ej4](http://i1294.photobucket.com/albums/b605/josejapch/IV/Tema%201/ej42_zpsyqp6gpnw.jpg)
 
 *(texto repetido por cada uno de los núcleos del procesador)*
 
