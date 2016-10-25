@@ -83,4 +83,4 @@ python manage.py test
 
 ## Ejercicio 8.
 ### Haced los dos primeros pasos antes de pasar al tercero.
-Se puede consultar los pasos para la configuración de Travis CI en la [documentación extra](https://github.com/josejapch/documentacion-Proyecto-IV/blob/master/hito1.md) del hito1.
+Se puede consultar los pasos para la configuración de Travis CI en la [documentación extra](https://github.com/josejapch/documentacion-Proyecto-IV/blob/master/hito2.md) del hito2.
