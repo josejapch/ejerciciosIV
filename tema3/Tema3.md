@@ -61,7 +61,7 @@ Para incluir servicio REST a nuestra aplicación emplearemos [Django REST framew
     ```pip install djangorestframework```
 - Añadimos la nueva dependencia a [requirements.txt](https://github.com/josejapch/proyectoIV1617/blob/master/requirements.txt)
 - Añadimos en nuestro archivo [settings.py](https://github.com/josejapch/proyectoIV1617/blob/master/queueme/settings.py) la nueva aplicación instalada (INSTALLED_APPS).
-- Creamos un archivo [serializers.py]() que contendrá las clases serializadas, en este caso serán las colas de la aplicación.
+- Creamos un archivo [serializers.py](https://github.com/josejapch/proyectoIV1617/blob/master/queue/serializers.py) que contendrá las clases serializadas, en este caso serán las colas de la aplicación.
 - Probamos la clase de serialización accediendo a la consola de Django con el comando:
 
     ```python manage.py shell```
