@@ -55,7 +55,28 @@ Creación de una aplicación en OpenShift a través de la interfaz web.
     
 ## Ejercicio 3.
 ### Realizar una app en express (o el lenguaje y marco elegido) que incluya variables como en el caso anterior.
+Para incluir servicio REST a nuestra aplicación emplearemos [Django REST framework](http://www.django-rest-framework.org/) y seguiremos la documentación disponible en su página.
+- Instalamos Django REST framework con el comando:
 
+    ```pip install djangorestframework```
+- Añadimos la nueva dependencia a [requirements.txt](https://github.com/josejapch/proyectoIV1617/blob/master/requirements.txt)
+- Añadimos en nuestro archivo [settings.py](https://github.com/josejapch/proyectoIV1617/blob/master/queueme/settings.py) la nueva aplicación instalada (INSTALLED_APPS).
+- Creamos un archivo [serializers.py]() que contendrá las clases serializadas, en este caso serán las colas de la aplicación.
+- Probamos la clase de serialización accediendo a la consola de Django con el comando:
+
+    ```python manage.py shell```
+    
+    ![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema3/imagenes/ej3%20prueba1.png)
+    
+    En la imagen superior hemos creado una cola nueva y la hemos pasado por la serialización. En la siguiente imagen se muestran los datos de la cola en formato JSON.
+    
+    ![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema3/imagenes/ej3%20prueba%20json.png)
+    
+    Se ha añadido una vista para que, a través de un formulario se busque una cola. Si existe, se devuelve la información en formato JSON; si no, se vuelve a la página con el formulario con un mensaje de error.
+    
+    ![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema3/imagenes/ej3%20consultaJSON%20(exito).png)
+    
+    ![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema3/imagenes/ej3%20consultaJSON%20(fracaso).png)
 
 ## Ejercicio 4.
 ### Crear pruebas para las diferentes rutas de la aplicación.
@@ -63,7 +84,10 @@ Creación de una aplicación en OpenShift a través de la interfaz web.
 
 ## Ejercicio 5.
 ### Instalar y echar a andar tu primera aplicación en Heroku.
+La instalación de la aplicación en Heroku se encuentra en la [documentación de la práctica 3](https://github.com/josejapch/documentacion-Proyecto-IV/blob/master/hito3.md).
 
+Despliegue de la aplicación:
+[![Heroku](http://i66.tinypic.com/2d2ja74.jpg)](https://queueme.herokuapp.com/)
 
 ## Ejercicio 6.
 ### Usar como base la aplicación de ejemplo de heroku y combinarla con la aplicación en node que se ha creado anteriormente. Probarla de forma local con foreman. Al final de cada modificación, los tests tendrán que funcionar correctamente; cuando se pasen los tests, se puede volver a desplegar en heroku.
@@ -75,3 +99,4 @@ Creación de una aplicación en OpenShift a través de la interfaz web.
 
 ## Ejercicio 8.
 ### Preparar la aplicación con la que se ha venido trabajando hasta este momento para ejecutarse en un PaaS, el que se haya elegido.
+[![Heroku](http://i66.tinypic.com/2d2ja74.jpg)](https://queueme.herokuapp.com/)
