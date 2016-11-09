@@ -80,7 +80,17 @@ Para incluir servicio REST a nuestra aplicación emplearemos [Django REST framew
 
 ## Ejercicio 4.
 ### Crear pruebas para las diferentes rutas de la aplicación.
+Para realizar los test, se ha modificado el archivo [test.py](https://github.com/josejapch/proyectoIV1617/blob/master/queue/tests.py) incluyendo una nueva clase "TestJson". En ella incluimos una función que comprueba que se devuelve un JSON al hacer una consulta correcta en el formulario comentado en el ejercicio 3.
 
+![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema3/imagenes/ej4%20prueba%20json.png)
+
+Además, en la clase "TestViews", hemos añadido test para asegurarnos de que una consulta GET a "consultar_colaJSON" obtiene una respuesta 200 (correcta) y que obtiene la misma respuesta el formulario ante una petición POST en la que se introduce un código de cola incorrecto.
+
+![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema3/imagenes/ej4%20json%20respuesta%20200.png)
+
+Resultado de los test:
+
+![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema3/imagenes/ej4%20resultado%20test.png)
 
 ## Ejercicio 5.
 ### Instalar y echar a andar tu primera aplicación en Heroku.
