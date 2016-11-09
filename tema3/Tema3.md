@@ -104,7 +104,34 @@ Despliegue de la aplicación:
 
 
 ## Ejercicio 7.
-### Haz alguna modificación a tu aplicación en node.js para Heroku, sin olvidar añadir los tests para la nueva funcionalidad, y configura el despliegue automático a Heroku usando Snap CI o alguno de los otros servicios, como Codeship, mencionados en StackOverflow
+### Haz alguna modificación a tu aplicación en node.js para Heroku, sin olvidar añadir los tests para la nueva funcionalidad, y configura el despliegue automático a Heroku usando Snap CI o alguno de los otros servicios, como Codeship, mencionados en StackOverflow.
+En el proyecto he automatizado el despliegue con las opciones que ofrece Heroku esperando a que se pasen los test en TravisCI tras realizar un "push" en GitHub. Puede verse cómo se ha hecho en [Informacion extra: Configuración Travis CI](https://github.com/josejapch/documentacion-Proyecto-IV/blob/master/hito2.md) e [Informacion extra: Despliegue y automatización en Heroku](https://github.com/josejapch/documentacion-Proyecto-IV/blob/master/hito3.md), punto 3.
+
+Procedemos a explicar cómo hacer con Snap CI:
+
+- Para integrar Snap CI en nuestro proyecto nos dirigimos a las opciones del proyecto y, en "Integrations & services", añadimos el servicio Snap CI.
+
+    ![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema3/imagenes/ej7%20elegir%20snapCI%20github.png)
+    
+- Nos indica que tenemos que darnos de alta en Snap CI con nuestra cuenta de GitHub y añadir el repositorio. Lo hacemos y podremos editar los pasos que se van a seguir para la integración contínua.
+
+- Podemos indicar los pasos a seguir mediante una especie de "cajas" donde incluimos los comandos que se van a ir ejecutando.
+
+    ![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema3/imagenes/ej7%20cajas%20snapci.png)
+    
+- En la imagen anterior podemos ver como se han añadido 2 "cajas". Una se encarga de instalar los requisitos de la aplicación y la otra ejecutará los test mediante el makefile que se ha incluido en el proyecto (también se podría haber usado el comando ```python manage.py test```).
+
+    ![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema3/imagenes/ej7%20caja%20requisistos.png)
+    
+    ![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema3/imagenes/ej7%20caja%20test.png)
+    
+- Guardamos la configuración y ejecutará las "cajas" indicándonos si ha fallado algo.
+
+    ![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema3/imagenes/ej7%20cajas%20superadas.png)
+    
+- Ya tan solo quedaría indicar, en Heroku, que se realice el despliegue tras realizar la integración contínua tal y como hemos indicado en la documentación extra del hito 3.
+
+*NOTA: En el proyecto se ha conservado la configuración con Travis CI.*
 
 
 ## Ejercicio 8.
