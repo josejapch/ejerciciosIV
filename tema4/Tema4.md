@@ -7,14 +7,14 @@ Para la instalación en Ubuntu podemos usar el comando: ```apt-get install lxc``
 
 Con el comando ```lxc-ls --version``` podemos ver la versión instalada y con el comando ```lxc-checkconfig``` comprobamos que el núcleo del SO está preparado para usar lxc.
 
-![imagen](Ej1)
+![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema4/imagenes/tema4%20ej1.png)
 
 ## Ejercicio 2.
 ### Comprobar qué interfaces puente se han creado y explicarlos.
 
 Si ejecutamos el comando ```ifconfig``` podemos ver "lcbr0" y "veth38L23G".
 
-![imagen](Ej2.1)
+![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema4/imagenes/Tema4%20ej2.1.png)
 
 Según he podido entender por la [wiki](https://wiki.debian.org/LXC/SimpleBridge) de debian y la páguina de [ayuda](https://help.ubuntu.com/lts/serverguide/lxc.html) de ubuntu, "lcbr0" se trata del puente (NAT) que suministra la conexión a internet al contenedor a través de la máquina anfitriona y "veth38L23G" sería una interfaz virtual ethernet.
 
@@ -25,13 +25,13 @@ Según he podido entender por la [wiki](https://wiki.debian.org/LXC/SimpleBridge
 
 - Ponemos en marcha el contenedor con el comando ```lxc-start -n una-caja```.
 
-![imagen](Ej3.1)
+![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema4/imagenes/Tema4%20ej3.1.png)
 
 ### 2. Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro.
 
 Podemos ver los templates disponibles usando el comando ```sudo ls /usr/share/lxc/templates/```
 
-![imagen](Ej3.2)
+![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema4/imagenes/Tema4%20ej3.2.png)
 
 En este caso instalaremos CentOS.
 
@@ -39,11 +39,11 @@ En este caso instalaremos CentOS.
 - Una vez instalado, crearemos el contenedor con el comando: ```sudo lxc-create -t centos -n una-caja-centos```
 - Al terminar la instalación se nos comunicará que la contraseña de root es temporal y debemos cambiarla.
 
-    ![imagen](Ej3.3)
+    ![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema4/imagenes/Tema4%20ej3.3.png)
     
 - Ponemos en marcha el contenedor con el comando ```lxc-start -n una-caja-centos```.
 
-    ![imagen](Ej3.4)
+    ![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema4/imagenes/Tema4%20ej3.4.png)
     
 ## Ejercicio 4.
 ### 1. Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas.
@@ -52,21 +52,21 @@ En este caso instalaremos CentOS.
 
 - Una vez instalado se nos indicará cómo podemos acceder a lxc-webpanel.
 
-    ![imagen](Ej4.1)
+    ![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema4/imagenes/Tema4%20ej4.1.png)
     
-    ![imagen](ej4.2)
+    ![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema4/imagenes/Tema4%20ej4.2.png)
     
 - Si seleccionamos uno de los contenedores se nos mostrará un menú con la opción de iniciar, pausar y parar el contendor.
 
-    ![imagen](ej4.4)
+    ![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema4/imagenes/Tema4%20ej4.4.png)
     
-    ![imagen](ej4.3)
+    ![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema4/imagenes/Tema4%20ej4.5.png)
     
-    ![imagen](ej4.5)
+    ![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema4/imagenes/Tema4%20ej4.3.png)
     
 ### 2. Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.
 
-![imagen](4.6) ![imagen](4.7)
+![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema4/imagenes/Tema4%20ej4.6.png) ![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema4/imagenes/Tema4%20ej4.7.png)
 
 A la izquierda podemos ver la configuración de "una-caja" cuando fué creada y a la derecha la configuración modificada con un límite de memoria de 1024 MB y una CPU.
 
