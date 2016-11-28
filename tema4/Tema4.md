@@ -68,8 +68,63 @@ En este caso instalaremos CentOS.
 
 ![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema4/imagenes/Tema4%20ej4.6.png) ![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema4/imagenes/Tema4%20ej4.7.png)
 
-A la izquierda podemos ver la configuración de "una-caja" cuando fué creada y a la derecha la configuración modificada con un límite de memoria de 1024 MB y una CPU.
+En la primera imagen podemos ver la configuración de "una-caja" cuando fué creada y en la segunda la configuración modificada con un límite de memoria de 1024 MB y una CPU.
 
 ## Ejercicio 6.
 ### Instalar docker.
 
+Explicado en la documentación extra del hito 4: [Creación de un entorno de pruebas para la aplicación usando contenedores: 1. Instalación de Docker.](https://github.com/josejapch/documentacion-Proyecto-IV/blob/master/hito4.md)
+
+## Ejercicio 7.
+### 1. Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.
+
+Para crear la imagen de Ubuntu podemos usar el comando: ```docker pull ubuntu```
+
+Para crear la imagen de CentOS podemos usar el comando: ```docker pull centos```
+
+### 2. Buscar e instalar una imagen que incluya MongoDB.
+
+Podemos usar el comando: ```docker pull mongo```
+
+Podemos ver las imágenes instaladas a partir de docker con el comando: ```docker images```
+
+![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema4/imagenes/Tema4%20ej7.1.png)
+
+Información sobre cómo instalar las imágenes se puede obtener del repositorio de dockerHub: [CentOS](https://hub.docker.com/_/centos/), [Ubuntu](https://hub.docker.com/_/ubuntu/), [Mongo](https://hub.docker.com/_/mongo/).
+
+## Ejercicio 8.
+### Crear un usuario propio e instalar nginx en el contenedor creado de esta forma.
+
+- Para crear el usuario vamos a arrancar la máquina Ubuntu (podría realicarse sin conectarnos son el comando ```docker run <id de la máquina> <comando>```). Para esto usaremos el comando: ```docker run -i -t ubuntu /bin/bash```. Para crear el usuario emplearemos el comando ```adduser```.
+
+![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema4/imagenes/Tema4%20ej8.1.png)
+
+- Actualizamos el repositorio con ```apt-get update``` e instalamos nginx con el comando: ```apt-get install nginx```
+
+- Iniciamos el servicio con el comando: ```service nginx start```.
+
+Si queremos comprobar si realmente está funcionando, podemos instalar curl con el comando: ```apt-get install curl```.
+
+![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema4/imagenes/Tema4%20ej8.2.png)
+
+## Ejercicio 9.
+### Crear a partir del contenedor anterior una imagen persistente con commit.
+
+Para hacer la imagen del contenedor anterior podemos ver, con el comando ´´´ docker ps -a ```  las ejecuciones de las máquinas.
+
+![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema4/imagenes/Tema4%20imagen%209.1.png)
+
+En este caso queremos hacer el commit sobre el contenedor de ID: 51bd498824ea (el correspondiente con el ejercicio anterior).
+
+Hacemos un commit, en este caso: ```docker commit 51bd498824ea ubuntu4-e8```
+
+![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema4/imagenes/Tema4%20ej9.2.png)
+
+Podemos ver cómo se ha creado una imagen con el nuevo nombre. Si ahora ponemos en marcha el nuevo contenedor, podemos iniciar el servicio de nginx ya que se encuentra instalado.
+
+![imagen](https://github.com/josejapch/ejerciciosIV/blob/master/tema4/imagenes/tema4%20ej9.3.png)
+
+## Ejercicio 10.
+### Crear una imagen con las herramientas necesarias para el proyecto de la asignatura sobre un sistema operativo de tu elección.
+
+Todo el proceso se encuentra documentado en la [documentación extra del hito4](https://github.com/josejapch/documentacion-Proyecto-IV/blob/master/hito4.md).
