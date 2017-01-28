@@ -7,7 +7,7 @@ Instalamos con el comando:
 
 ```curl -L https://www.opscode.com/chef/install.sh | bash```
 
-![](6.1)
+![](https://github.com/josejapch/ejerciciosIV/blob/master/tema6/imagenes/ej%206.1.png)
 
 ## Ejercicio 3.
 ### Desplegar la aplicación de DAI con todos los módulos necesarios usando un playbook de Ansible.
@@ -51,13 +51,13 @@ Aprovecho que he roto la máquina virtual de DAI para instalarla y explicar el p
 - Creamos el Vagrantfile: ```vagrant init bento/ubuntu-16.04```
 - Inicializamos la máquina: ```vagrant up```
 
-![](6.2)
+![](https://github.com/josejapch/ejerciciosIV/blob/master/tema6/imagenes/ej%206.2.png)
 
 *NOTA: En el momento que realicé vagrant up por primera vez no recordé hacer la captura... por lo que la captura es de un segundo inicio.*
 
 - Conectamos con ella mediante ssh: ```vagrant ssh```
 
-![](6.3)
+![](https://github.com/josejapch/ejerciciosIV/blob/master/tema6/imagenes/ej%206.3.png)
 
 ## Ejercicio 5.
 ### Crear un script para provisionar `nginx` o cualquier otro servidor web que pueda ser útil para alguna otra práctica.
