@@ -110,7 +110,7 @@ El [proyecto de la asignatura](https://github.com/josejapch/proyectoIV1617) est√
 
 Siguiendo los pasos de los ejercicios anteriores.
 
-![](Ihttps://github.com/josejapch/ejerciciosIV/blob/master/tema5/imagenes/Ej%205.20.png)
+![](https://github.com/josejapch/ejerciciosIV/blob/master/tema5/imagenes/Ej%205.20.png)
 
 
 
